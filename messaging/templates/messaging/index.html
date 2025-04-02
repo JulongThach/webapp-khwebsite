@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KH - Website Design & Hosting</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    {% load static %}
+    <!-- Favicon -->
+    <link href="{% static 'img/logo.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- Sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2" style="color: #21618c;"></small>
+                    <small>Office Hour: 08.20 AM - 05.30 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>(855) 98 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="bi bi-telegram"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0" style="color:#002855;"><i class="fa-solid fa-globe"></i>KHWebsite</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#service" class="nav-item nav-link">Pricing</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" style="background-color: #002855; border: none;">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid header bg-primary p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row" style="background-color: #21618c;">
+            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white mb-5" style="text-transform:uppercase;">lowest fees in phnom penh & hassle free</h1>
+                <div class="row g-4">
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">165</h2>
+                            <p class="text-light mb-0">Total Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">320</h2>
+                            <p class="text-light mb-0">Web Design & Hosting</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">120</h2>
+                            <p class="text-light mb-0">Email Filtering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="{% static 'img/banner/1.png' %}" alt="">
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="{% static 'img/banner/2.png' %}" alt="">
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="{% static 'img/banner/3.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Strength Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Best Quality</p>
+                <h1>What Sets Us Apart</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-solid fa-heart text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Our Value</h4>
+                        <p class="mb-4">KHWebsite understand SMBs' unique challenges and provide cost-effective digital solutions like website development, SEO, and eCommerce. Our tailored, budget-friendly services help businesses build a strong online presence and grow with confidence.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-solid fa-hand-fist text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Our Strength</h4>
+                        <p class="mb-4">KHWebsite will design a website which will help boosts engagement and reach by giving you full control over your digital presence. Unlike social media, it ensures visibility, direct customer interaction, and brand credibility with features like blogs, contact forms, and eCommerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Strength End -->
+
+    <!-- Question Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Common Questions</p>
+                <h1>Why Do We Need to Create a Website and Have Our Own Domain?</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{% static 'img/question/3.png' %}" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <h5 class="mb-1">Unique Domain for Your Email(instead of @gmail.com) </h5>
+                        <p>Unique domains enable SEO and local search visibility, complementing social media outreach. domain can be .com / .beauty / .makeup</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{% static 'img/question/2.png' %}" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <h5 class="mb-1">Avoid Impersonation and Scams</h5>
+                        <p>Scammers may register similar Gmail accounts to impersonate your company and deceive your customers! A unique domain ensures that only you control the email. Register now to prevent hijacking!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{% static 'img/question/5.png' %}" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <h5 class="mb-1">SEO Optimization</h5>
+                        <p>Websites can be optimized for search engine visibility, which social media alone cannot achieve. Hosting providers can offer SEO-friendly features like fast-loading pages and mobile responsiveness.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{% static 'img/question/7.png' %}" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <h5 class="mb-1">Stability & Control</h5>
+                        <p>Facebook and other social media control accounts, they might ban you unfairly and you will lose all your clients on facebook if that happens. Have control over your businese by having own website and domain.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{% static 'img/question/6.png' %}" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <h5 class="mb-1">Brand Credibility</h5>
+                        <p>Professional email addresses (e.g., info@business.com, info@seely.beauty) build trust compared to generic Gmail/Facebook accounts.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="{% static 'img/question/4.png' %}" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <h5 class="mb-1">Reach Out to the International Communities</h5>
+                        <p>Professional email addresses (e.g., info@business.com, info@seely.beauty) build trust compared to generic Gmail/Facebook accounts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Question End -->
+
+    <!-- Service Start -->
+    <div id="service" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+                <h1>Our Quality Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-object-group text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Website Design</h4>
+                        <p class="mb-4">We help you create a heartfelt website that tells your story. Having a website improves your digital image, promote trust and legitimacy in your brand. Our top-tier designs will help your company create a digital impact and to reach out to more customers. Tell us your dream and we can make it happen.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-globe text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Website Hosting</h4>
+                        <p class="mb-4">We offer fast, secure, and reliable web hosting with the lowest rate in Cambodia. Our low-cost web hosting does not compromise on quality. Our services come with website monitoring service and backup service to ensure seamless digital experience for your customers.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-solid fa-shield-virus text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Email Prodction & Filtering</h4>
+                        <p class="mb-4">Stop using generic Gmail addresses that looks unprofessional and fall easily to impersonation scams. Unlike other companies, we provide free, unlimited emails for you. Our email protection and filtering services safeguard your inbox from spam, phishing, and malware. Protect your customers and yourself today!</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-solid fa-gear text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">SEO Optimization</h4>
+                        <p class="mb-4">Digital marketing in Cambodia is crowded and confusing.  Our SEO service boosts visibility and drives organic traffic through keyword research, on-page optimization, helping your customer find your easily online and post out your business location on Google Maps.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-solid fa-bag-shopping text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Ecommerce Integration</h4>
+                        <p class="mb-4">Our eCommerce integration service connects your store to your website, customers can now pay online directly to you through ABA pay or other payment services in Cambodia. Having your own website means you can skip the 20-30% platform commission fees on other online platforms.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa-solid fa-toolbox text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Website Maintenance</h4>
+                        <p class="mb-4">Our website maintenance service ensures your site runs smoothly with regular updates, security checks, and performance optimization. We handle bug fixes, content updates, backups and technical support to keep your website secure, fast, and up-to-date.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">FOLLOW US</h5>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-telegram"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">OUR SERVICES</h5>
+                    <a class="btn btn-link" href="">Website Design</a>
+                    <a class="btn btn-link" href="">Website Hosting</a>
+                    <a class="btn btn-link" href="">Email Protection & Filtering</a>
+                    <a class="btn btn-link" href="">SEO Optimization</a>
+                    <a class="btn btn-link" href="">Website Maintenance</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">QUICK LINKS</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="#service">Services</a>
+                    <a class="btn btn-link" href="#service">Pricing</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Build with KHWebsite</h5>
+                    <p>Our Reliable Partner and Lowest Web Hosting Cost in Cambodia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        All Rights Reserved & Copyright © 2025 By <a class="border-bottom" href="https://khwebsite.com/">KHWebsite</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed By <a class="border-bottom" href="https://khwebsite.com/">KHWebsite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+     <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+     <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+     <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+     <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+     <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+     <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+     <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+ 
+     <!-- Template Javascript -->
+     <script src="{% static 'js/main.js' %}"></script>
+ 
+     <!-- Sweet Alert -->
+     {% if messages %}
+     <script>
+         {% for message in messages %}
+             swal("{{message}}", " ", "success")
+         {% endfor %}
+     </script>
+     {% endif %}
+</body>
+
+</html>
