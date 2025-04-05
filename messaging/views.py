@@ -23,7 +23,7 @@ def send_message(request):
             message = form.cleaned_data["message"]
             send_telegram_message(name, phone, subject, message)
             messages.success(request, 'Message Send')
-            return render(request, "messaging/contact.html", {"form": form})  # Redirect after successful submission
+            return redirect("home")  # Redirect after successful submission
     else:
         form = MessageForm()
         
@@ -31,6 +31,12 @@ def send_message(request):
 
 def home(request):
     return render(request, "messaging/index.html")
+
+def about(request):
+    return render(request, "messaging/about.html")
+
+def price(request):
+    return render(request, "messaging/price.html")
 
 def success(request):
     return render(request, "messaging/success.html")
