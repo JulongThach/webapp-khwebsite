@@ -1,0 +1,13 @@
+.price1{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #002855;
+}
+.price1:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.price-title h5{
+    font-size: 30px;
+
+}
