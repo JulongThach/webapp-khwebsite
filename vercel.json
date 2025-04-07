@@ -7,7 +7,15 @@
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "khwebsite/wsgi.py"
+			"dest": "khwebsite/wsgi.py",
+            "methods": [
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE",
+                "OPTIONS"
+            ]
 		}
 	]
 }
